@@ -1,0 +1,34 @@
+{
+  "data_kind": "synthetic",
+  "options": [
+    {
+      "option_id": "option_a",
+      "travel_time_minutes": 12,
+      "available_seats": 6,
+      "wheelchair_accessible": false
+    },
+    {
+      "option_id": "option_b",
+      "travel_time_minutes": 28,
+      "available_seats": 6,
+      "wheelchair_accessible": true
+    },
+    {
+      "option_id": "option_c",
+      "travel_time_minutes": 18,
+      "available_seats": 4,
+      "wheelchair_accessible": true
+    },
+    {
+      "option_id": "option_d",
+      "travel_time_minutes": 15,
+      "available_seats": 2,
+      "wheelchair_accessible": true
+    }
+  ],
+  "constraints": {
+    "max_travel_time_minutes": 20,
+    "min_available_seats": 4,
+    "requires_wheelchair_access": true
+  }
+}

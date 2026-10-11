@@ -1,0 +1,62 @@
+{
+  "data_kind": "public_gtfs_extract",
+  "metadata": {
+    "publisher": "Helsinki Region Transport (HSL)",
+    "source_url": "https://infopalvelut.storage.hsldev.com/gtfs/hsl.zip",
+    "source_page": "https://www.hsl.fi/en/opendata",
+    "license": "CC BY 4.0",
+    "attribution": "© HSL 2026",
+    "downloaded_at_date": "2026-10-11",
+    "source_sha256": "6392a74d85e1775637f9c96a3db93d823e72fcfc277cf20d7e906244fa866316",
+    "feed_info": {
+      "feed_publisher_name": "Helsingin seudun liikenne",
+      "feed_publisher_url": "http://www.hsl.fi/",
+      "feed_lang": "fi",
+      "feed_start_date": "20261009",
+      "feed_end_date": "20261207",
+      "feed_version": "2026-10-10 06:50:57"
+    },
+    "selection_rule": "First four route 1001 direction 0 departures at or after 08:00 for service 1001_20261009_20261030_Ke; no filtering by feasibility.",
+    "planning_date": "2026-10-14",
+    "reference_time": "08:00:00",
+    "origin_stop_id": "1050417",
+    "destination_stop_id": "1020444",
+    "origin_name": "Telakkakatu",
+    "destination_name": "Lasipalatsi",
+    "elapsed_definition": "Minutes from 08:00 to scheduled arrival, including waiting.",
+    "capacity_status": "Not provided by GTFS; disabled rather than fabricated.",
+    "accessibility_rule": "Confirmed only when trip and both boarding/alighting stops have code 1; unknown codes are not confirmation.",
+    "calendar_exceptions": []
+  },
+  "options": [
+    {
+      "option_id": "1001_20261009_Ke_1_0801",
+      "travel_time_minutes": 14,
+      "available_seats": null,
+      "wheelchair_accessible": true
+    },
+    {
+      "option_id": "1001_20261009_Ke_1_0811",
+      "travel_time_minutes": 24,
+      "available_seats": null,
+      "wheelchair_accessible": true
+    },
+    {
+      "option_id": "1001_20261009_Ke_1_0821",
+      "travel_time_minutes": 34,
+      "available_seats": null,
+      "wheelchair_accessible": true
+    },
+    {
+      "option_id": "1001_20261009_Ke_1_0831",
+      "travel_time_minutes": 44,
+      "available_seats": null,
+      "wheelchair_accessible": true
+    }
+  ],
+  "constraints": {
+    "max_travel_time_minutes": 20,
+    "min_available_seats": null,
+    "requires_wheelchair_access": true
+  }
+}

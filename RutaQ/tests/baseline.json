@@ -1,0 +1,136 @@
+{
+  "public": {
+    "options": [
+      {
+        "option_id": "1001_20261009_Ke_1_0801",
+        "travel_time_minutes": 14,
+        "available_seats": null,
+        "wheelchair_accessible": true
+      },
+      {
+        "option_id": "1001_20261009_Ke_1_0811",
+        "travel_time_minutes": 24,
+        "available_seats": null,
+        "wheelchair_accessible": true
+      },
+      {
+        "option_id": "1001_20261009_Ke_1_0821",
+        "travel_time_minutes": 34,
+        "available_seats": null,
+        "wheelchair_accessible": true
+      },
+      {
+        "option_id": "1001_20261009_Ke_1_0831",
+        "travel_time_minutes": 44,
+        "available_seats": null,
+        "wheelchair_accessible": true
+      }
+    ],
+    "constraints": {
+      "max_travel_time_minutes": 20,
+      "min_available_seats": null,
+      "requires_wheelchair_access": true
+    },
+    "encoding": {
+      "index_bits": 2,
+      "time_bits": 6,
+      "seat_bits": 1
+    },
+    "data_kind": "public_gtfs_extract",
+    "feasible_indices": [
+      0
+    ],
+    "experiments": {
+      "uniform_sampling": {
+        "ideal_feasible_probability": 0.25,
+        "oracle_queries_per_shot": 0,
+        "qubits": 17,
+        "depth": 2,
+        "gate_counts": {
+          "h": 2,
+          "measure": 2
+        }
+      },
+      "constraint_grover": {
+        "ideal_feasible_probability": 1,
+        "oracle_queries_per_shot": 1,
+        "qubits": 17,
+        "depth": 404,
+        "gate_counts": {
+          "rz": 329,
+          "cx": 285,
+          "h": 64,
+          "x": 44,
+          "measure": 2
+        }
+      }
+    }
+  },
+  "synthetic": {
+    "options": [
+      {
+        "option_id": "option_a",
+        "travel_time_minutes": 12,
+        "available_seats": 6,
+        "wheelchair_accessible": false
+      },
+      {
+        "option_id": "option_b",
+        "travel_time_minutes": 28,
+        "available_seats": 6,
+        "wheelchair_accessible": true
+      },
+      {
+        "option_id": "option_c",
+        "travel_time_minutes": 18,
+        "available_seats": 4,
+        "wheelchair_accessible": true
+      },
+      {
+        "option_id": "option_d",
+        "travel_time_minutes": 15,
+        "available_seats": 2,
+        "wheelchair_accessible": true
+      }
+    ],
+    "constraints": {
+      "max_travel_time_minutes": 20,
+      "min_available_seats": 4,
+      "requires_wheelchair_access": true
+    },
+    "encoding": {
+      "index_bits": 2,
+      "time_bits": 5,
+      "seat_bits": 3
+    },
+    "data_kind": "synthetic",
+    "feasible_indices": [
+      2
+    ],
+    "experiments": {
+      "uniform_sampling": {
+        "ideal_feasible_probability": 0.25,
+        "oracle_queries_per_shot": 0,
+        "qubits": 17,
+        "depth": 2,
+        "gate_counts": {
+          "h": 2,
+          "measure": 2
+        }
+      },
+      "constraint_grover": {
+        "ideal_feasible_probability": 1,
+        "oracle_queries_per_shot": 1,
+        "qubits": 17,
+        "depth": 539,
+        "gate_counts": {
+          "rz": 413,
+          "cx": 359,
+          "h": 72,
+          "x": 44,
+          "measure": 2
+        }
+      }
+    }
+  }
+}
